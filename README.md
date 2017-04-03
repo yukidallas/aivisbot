@@ -33,6 +33,9 @@ require 'aivis/slack_bot'
 ```
 
 ## Usage Examples (Slack bot)
+More information on [Wiki][slack-plugin]
+
+[slack-plugin]: https://github.com/yukidallas/aivisbot/wiki/Create-Plugin
 
 Bot configuration
 ```ruby
@@ -73,7 +76,7 @@ bot.install_plugin(PingPlugin, JobPlugin)
 
 ## More custimize
 Catch exceptions
-```
+```ruby
 class MyBot < Aivis::SlackBot::Reactor
   def handle_exception(options = {})
     super
